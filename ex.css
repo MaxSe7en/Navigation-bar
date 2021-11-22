@@ -1,0 +1,62 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+button {
+    background-color: rebeccapurple;
+    color: snow;
+    padding: 1rem;
+    border: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    /* margin-bottom: 15px; */
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* button.active {
+    
+} */
+
+nav {
+    background-color: rebeccapurple;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 2rem 0px;
+    transform: translateX(100%);
+}
+
+nav.active {
+    transform: translateX(0);
+    transition: ease-in 200ms;
+    /* transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s; */
+    /* transition: cubic-bezier(0.47, 0, 0.745, 0.715) 200ms; */
+}
+
+ul {
+    padding: 4px;
+    
+}
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: snow;
+    
+}
